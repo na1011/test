@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+	String logon = null;
+	if(session.getAttribute("loginON") != null) {
+		logon = (String)session.getAttribute("loginON");
+	}
+%>
+
+<%
+	if(logon == null) {
+%>
 	<form action="joinAction.jsp" method="post">
 		<h3>회원가입</h3>
 		<label for="userID">사용할 아이디</label>
@@ -22,5 +34,12 @@
 		<input type="password" name="userPWD" id="userPWD">
 		<input type="submit" value="로그인">
 	</form>
+<%
+	} else {
+%>
+	<h3><a href="logoutAction.jsp">로그아웃</a></h3>
+<%
+	}
+%>
 </body>
 </html>

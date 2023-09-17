@@ -18,7 +18,7 @@
 		PrintWriter script = response.getWriter();
 		script.println("<script>");
 		script.println("alert('이미 로그인이 되어 있습니다')");
-		script.println("location.href='index.html'");
+		script.println("location.href='index.jsp'");
 		script.println("</script>");
 	}
 
@@ -43,7 +43,7 @@
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("alert('회원가입 성공')");
-			script.println("location.href='index.html'");
+			script.println("location.href='index.jsp'");
 			script.println("</script>");
 		}
 	}
