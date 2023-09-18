@@ -25,7 +25,7 @@
 %>
 	<form action="joinAction.jsp" method="post">
 		<h3>회원가입</h3>
-		<p>ldh2</p>
+		<p>ldh1</p>
 		<label for="userID">사용할 아이디</label>
 		<input type="text" name="userID" id="userID">
 		<label for="userPWD">사용할 비밀번호</label>
