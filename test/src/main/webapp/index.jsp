@@ -25,6 +25,7 @@
 %>
 	<form action="joinAction.jsp" method="post">
 		<h3>회원가입</h3>
+		<p>kcg</p>
 		<label for="userID">사용할 아이디</label>
 		<input type="text" name="userID" id="userID">
 		<label for="userPWD">사용할 비밀번호</label>
@@ -47,7 +48,7 @@
 			pageNumber = Integer.parseInt(request.getParameter("pageNum"));
 		}
 		
-		BoardDAO dao = new BoardDAO(); // 인스턴스 생성
+		BoardDAO dao = new BoardDAO();
 		ArrayList<Board> list = dao.getList(pageNumber);
 %>
 
